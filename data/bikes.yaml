@@ -1,0 +1,11 @@
+enable: true
+bikes:
+  - image: "/img/bike1.jpg"
+    name: "Bike 1 Name"
+    description: "Description of Bike 1"
+    price: "$XXX"
+  - image: "/img/bike2.jpg"
+    name: "Bike 2 Name"
+    description: "Description of Bike 2"
+    price: "$XXX"
+  # Add more bikes as needed

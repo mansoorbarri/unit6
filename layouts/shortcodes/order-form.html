@@ -1,0 +1,66 @@
+<form id="bikeOrderForm" method="POST" action="https://formspree.io/f/{{ .Site.Params.contact.formspree_form_id }}">
+    <div class="row gtr-uniform">
+        <div class="col-6 col-12-xsmall">
+          <input type="text" name="name" id="name" value="" placeholder="{{ i18n "name" }}" required />
+        </div>
+        <div class="col-6 col-12-xsmall">
+          <input type="email" name="email" id="email" value="" placeholder="{{ i18n "email" }}" required />
+        </div>
+    </div>
+
+    <label for="orderType"></label>
+    <select id="orderType" name="orderType">
+        <option value="" selected disabled>Select Type:</option>
+        <option value="bespoke">Bespoke</option>
+        <option value="stock">Stock</option>
+    </select>
+    
+    <!-- Fields for Bespoke -->
+    <div id="bespokeFields" style="display: none; margin-top: 10px;">
+        <label for="riderDetails">Rider Details:</label>
+        <textarea id="riderDetails" name="riderDetails" placeholder="Height, leg mesurements or any other special requirements"></textarea>
+        
+        <label for="bikeDetails">Bike Details:</label>
+        <textarea id="bikeDetails" name="bikeDetails" placeholder="Intended purpose, wheel size, tyre type & gears or any other requirement"></textarea>
+        
+        <label for="budget">Budget:</label>
+        <input type="text" id="budget" name="budget" placeholder="£">
+        
+        <label for="requiredBy">Required By:</label>
+        <input type="date" id="requiredBy" name="requiredBy" style="color: grey;">
+    
+    </div>
+    
+    <!-- Fields for Stock -->
+    <div id="stockFields" style="display: none; margin-top: 10px;">
+        <label for="stockBikes">Select a Bike:</label>
+        <select id="stockBikes" name="stockBikes">
+            <option value="cube-aim">Cube Aim</option>
+            <option value="forme-hartington">Forme Hartington</option>
+            <option value="gt-avalanche">GT Avalanche</option>
+            <option value="gt-performer">GT Performer</option>
+            <option value="gt-stromer">GT Stromer</option>
+            <option value="gt-zaskar">GT Zaskar</option>
+            <option value="merida-crossway">Merida Crossway</option>
+            <option value="roment-grom">Roment Grom</option>
+        </select>
+    </div>
+
+    
+    <button class="primary" type="submit" style="margin-top: 20px;">Submit</button>
+</form>
+
+<script>
+    document.getElementById("orderType").addEventListener("change", function() {
+        var bespokeFields = document.getElementById("bespokeFields");
+        var stockFields = document.getElementById("stockFields");
+        
+        if (this.value === "bespoke") {
+            bespokeFields.style.display = "block";
+            stockFields.style.display = "none";
+        } else if (this.value === "stock") {
+            bespokeFields.style.display = "none";
+            stockFields.style.display = "block";
+        }
+    });
+</script>

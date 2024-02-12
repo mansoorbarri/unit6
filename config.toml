@@ -1,0 +1,107 @@
+baseURL = "https://unit6.mansoorbarri.com"
+title = "Spoke & Hub"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+paginate = "7"
+theme = "spectral"
+
+[params]
+fancyTitle = "Spoke & Hub"
+description = "Where Passion Meets Performance!"
+favicon = "/img/main/logo.png"
+startbuttonText = "View Catelogue"
+startbuttonLink = "/bikes"
+body_is_markdown = true
+custom_css = "foo.css"
+#custom_sass = "bar.scss"
+#images = ["path_to_social_image_for_link_previews.jpg"]
+
+[[params.menu.main]]
+url = '/'
+title = "Home"
+
+[[params.menu.main]]
+url = "/bikes"
+title = "bikes"
+
+[[params.menu.main]]
+url = "/events"
+title = "Events"
+
+[[params.menu.main]]
+url = "/about-us"
+title = "About us"
+
+[[params.menu.main]]
+url = "/our-team"
+title = "Our team" 
+
+[[params.menu.main]]
+url = "/contact-us"
+title = "Contact us " 
+
+[[params.menu.main]]
+url = "/order"
+title = "ORDER NOW"
+bold = "true"
+
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    series = "series"
+
+[params.one]
+enable = true
+title = "eCommerce coming soon"
+body = '''
+Spoke and Hub is gearing up to elevate your cycling experience! Stay tuned as we pedal towards the future with the upcoming addition of our e-commerce platform. Soon, you'll have the convenience of exploring and acquiring top-notch cycling gear and personalized products from the comfort of your home. Spoke and Hub – your destination for cycling excellence, now just a click away! 
+
+[Notify me](https://shop.unit6.mansoorbarri.com)
+'''
+
+[[params.one.icon]]
+icon = "fa-gem"
+style = "1"
+label = "Lorem"
+
+[[params.one.icon]]
+icon = "fa-heart"
+style = "2"
+label = "Ipsum"
+
+[[params.one.icon]]
+icon = "solid fa-code"
+style = "3"
+label = "Dolor"
+
+[params.cta]
+enable = true
+title = "Confused?"
+body = "Whether you're chasing podiums in road races, pushing your limits in triathlons, or simply looking to enjoy a leisurely ride through scenic routes, Spoke & Hub is here to support."
+
+[[params.cta.link]]
+href = "/order"
+text = "ORDER NOW!"
+special = true
+
+[[params.cta.link]]
+href = "/about-us"
+text = "Learn More"
+special = false
+
+[params.contact]
+enable = true
+title = "Contact"
+body = "Leave us a message."
+email = "info@spokeandhub.co.uk"
+subject = "New Submission!"
+formspree_form_id = "mayrevya"
+
+[params.social]
+twitter = "spoke&hub"
+facebook = "spoke&hub"
+youtube = "@spoke&hub"
+instagram = "spoke&hub"
+
+

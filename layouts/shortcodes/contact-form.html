@@ -1,0 +1,25 @@
+<form method="POST" action="https://formspree.io/f/{{ .Site.Params.contact.formspree_form_id }}">
+  <div class="row gtr-uniform">
+    <div class="col-6 col-12-xsmall">
+      <input type="text" name="name" id="name" value="" placeholder="{{ i18n "name" }}" required />
+    </div>
+    <div class="col-6 col-12-xsmall">
+      <input type="email" name="email" id="email" value="" placeholder="{{ i18n "email" }}" required />
+    </div>
+    <div class="col-6 col-12-xsmall">
+      <input type="text" name="phone" id="name" value="" placeholder="{{ i18n "phone" }}" required />
+    </div>
+    <div class="col-6 col-12-xsmall">
+      <input type="text" name="subject" value="" placeholder="Subject" required />
+    </div>
+    <div class="col-12">
+      <textarea name="message" id="message" placeholder="{{ i18n "yourmessage" }}" rows="6" required></textarea>
+    </div>
+    <div class="col-12">
+      <ul class="actions">
+        <li><input type="submit" value="{{ i18n "send" }}" class="primary" /></li>
+        <li><input type="reset" value="clear" /></li>
+      </ul>
+    </div>
+  </div>
+</form>
