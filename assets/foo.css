@@ -76,6 +76,9 @@ img {
     .bike-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .filter-button { 
+        margin-bottom: 5px;
+    }
 }
 
 body::-webkit-scrollbar {
