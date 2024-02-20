@@ -27,4 +27,14 @@ Whether you're chasing podiums in road races, pushing your limits in triathlons,
 
 We invite you to visit our store, share your cycling stories, and embark on a journey with us that celebrates the fusion of passion and performance. Together, let's make every ride an unforgettable adventure.
 
-**Spoke & Hub – Where Your Cycling Dreams Begin!**
+{{< html >}}
+<b class="img-center"> Spoke & Hub – Where Your Cycling Dreams Begin! </b>
+<img class="img-center" width="25%" src="/img/main/logo.png">
+<style>
+    .img-center { 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+{{< /html >}}
