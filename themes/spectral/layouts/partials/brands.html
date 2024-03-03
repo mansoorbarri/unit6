@@ -1,8 +1,12 @@
-<section id="one" class="wrapper special ">
-    <div class="inner">
+<section style="text-align: center;" class="wrapper style5">
+    <div style="text-align: center;" class="inner">
         <header class="major">
             <h2>Brands We Have Worked With</h2>
         </header>
-      
+    </div>
+    <div class="brands-img">
+            {{range .Site.Params.brands}}
+            <img src="{{.url}}" alt="{.name}" title="{{.name}}" width="150px">
+            {{end}}
     </div>
 </section>

@@ -16,6 +16,12 @@ custom_css = "foo.css"
 #custom_sass = "bar.scss"
 #images = ["path_to_social_image_for_link_previews.jpg"]
 
+brands = [
+    {name = "BMX", url = "https://www.shutterstock.com/image-vector/illustration-bmx-bike-sport-vector-600nw-2248829269.jpg"},        
+    {name = "Boosted", url = "https://www.longboarderlabs.com/wp-content/uploads/2019/06/boosted-stealth-logo-300-trans.png"},        
+    {name = "Lime", url = "https://logowik.com/content/uploads/images/lime-black6693.jpg"},        
+] 
+
 [[params.menu.main]]
 url = '/'
 title = "Home"
