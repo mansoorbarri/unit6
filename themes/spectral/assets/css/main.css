@@ -3644,7 +3644,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		#banner h2 {
+/* 		#banner h2 {
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
 			-ms-transform: scale(1);
@@ -3660,7 +3660,7 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 		}
-
+ */
 			#banner h2:before, #banner h2:after {
 				-moz-transition: width 0.85s ease;
 				-webkit-transition: width 0.85s ease;
