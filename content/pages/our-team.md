@@ -29,6 +29,11 @@ partial: "team"
 <b>Jake and Ethan Mitchell | Owner</b>
 <p style="text-align: left">Meet the heart and soul of Spoke & Hub, the two brothers who started it all. Jake and Ethan Mitchell are the driving force behind our shop. As passionate cyclists, their dedication to the sport has inspired the creation of this cycling haven. Jake, with his love for triathlons, is the visionary behind our triathlon-focused services, while Ethan, the road racing enthusiast, ensures that our road racing section is second to none. Their combined experience, expertise, and genuine love for cycling are the foundation upon which Spoke & Hub is built. They are not just owners; they are the embodiment of the cycling spirit that we cherish.</p>
 
+<style> 
+body p{ 
+    padding-bottom: 15px;
+}
+
 {{< /html>}}
 
 At Spoke & Hub, our team is a blend of experience, passion, and expertise, dedicated to providing you with the best cycling experience possible. Whether you're in need of service, seeking advice, or looking for your dream bike, our staff is here to make your cycling dreams a reality.
